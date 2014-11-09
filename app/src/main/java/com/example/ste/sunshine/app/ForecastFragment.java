@@ -62,6 +62,7 @@ public class ForecastFragment extends android.support.v4.app.Fragment {
         // in AndroidManifest.xml
 
         int id = item.getItemId();
+
         if (id == R.id.action_refresh) {
             FetchWeatherTask fetchWeather = new FetchWeatherTask();
             fetchWeather.execute("IP20EL");
